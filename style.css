@@ -28,6 +28,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    /* animation: slideFromLeft 1s ease forwards; */
 }
 
 .logo {
@@ -402,4 +403,73 @@ body {
 .buttons button:hover{
     background-color: var(--main-color);
     border-color: var(--main-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .home-content .home-line {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 0.9rem;
+    }
+    .start_btn {
+        font-size: 1.2rem;
+        padding: 0.4rem 1.5rem;
+    }
+    .guideline-sec, .final-result {
+        width: 450px;
+    }
+    .ques-sec .que-box {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-content .home-line {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 0.8rem;
+    }
+    .start_btn {
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
+    }
+    .guideline-sec, .final-result {
+        width: 350px;
+    }
+    .ques-sec .que-box {
+        width: 300px;
+    }
+    .guideline-sec p, .final-result p, .que-box .que-text, .que-footer .total-que, .que-footer .next-btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 5%;
+        justify-content: center; /* Center the content within the header */
+    }
+    .home-content .home-line {
+        font-size: 1.5rem;
+    }
+    .home-content p {
+        font-size: 0.7rem;
+    }
+    .start_btn {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.8rem;
+    }
+    .guideline-sec, .final-result {
+        width: 100%;
+        padding: 10px;
+    }
+    .ques-sec .que-box {
+        width: 90%;
+        padding: 15px;
+    }
+    .guideline-sec p, .final-result p, .que-box .que-text, .que-footer .total-que, .que-footer .next-btn {
+        font-size: 0.7rem;
+    }
 }
